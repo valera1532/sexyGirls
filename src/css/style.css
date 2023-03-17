@@ -283,7 +283,7 @@ body.lock {
     height: 34px;
     background-color: #00000000;
     border-bottom: 1px solid #fff;
-    width: 700px;
+    width: 600px;
     color: #fff;
 }
 
@@ -303,4 +303,16 @@ body.lock {
     display: flex;
     align-items: center;
     gap: 45px;
+}
+
+.header__tools {
+    display: flex;
+    align-items: flex-end;
+    gap: 25px;
+}
+
+.header__avatar img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
 }
