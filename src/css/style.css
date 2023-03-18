@@ -130,10 +130,10 @@ html {
 
 /*---------------------------ГЛАВНЫЕ КЛАССЫ-----------------------------------------*/
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Arial';
     color: #666666;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 18px;
+    line-height: 20px;
     background: #272727;
 }
 
@@ -267,10 +267,11 @@ body.lock {
 }
 
 .header__search input {
-    height: 34px;
+    height: 40px;
+    font-size: 22px;
     background-color: #00000000;
     border-bottom: 1px solid #fff;
-    width: 600px;
+    width: 45vw;
     color: #fff;
 }
 
@@ -304,4 +305,115 @@ body.lock {
     border-radius: 50%;
 }
 
-@media (max-width: 1600px) {}
+.header__open-m-search {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .header__search input {
+        height: 30px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .header__img {
+        width: 20px;
+        height: 20px;
+
+    }
+
+    .header__logo {
+        max-width: 140px;
+    }
+
+    .header__body {
+        gap: 25px;
+    }
+
+    .header__dowload svg {
+        max-height: 23px;
+    }
+
+    .header__notificatiom img {
+        max-height: 30px;
+    }
+
+    .header__block {
+        gap: 25px;
+    }
+
+    .header__avatar img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header__tools {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header__dowload {
+        display: none;
+    }
+
+    .header__notificatiom {
+        display: none;
+    }
+
+    .header__burger-block {
+        display: none;
+    }
+
+    .header {
+        padding: 15px 0px;
+    }
+
+    .header__block {
+        gap: 10px;
+    }
+
+    .header__logo {
+        max-width: 100px;
+    }
+
+    .header__open-m-search {
+        display: block;
+    }
+
+    .header__search {
+        position: absolute;
+        background: #272727;
+        z-index: 5;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 60px;
+        padding: 0 20px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+    }
+
+    .header__search.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .header__search input {
+        width: 100%;
+    }
+
+    .header__search button {
+        right: 20px;
+    }
+
+    .header__tools {
+        align-items: center;
+    }
+
+    .header__open-m-search img {
+        width: 20px;
+        height: 20px;
+    }
+}
