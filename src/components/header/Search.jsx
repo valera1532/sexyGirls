@@ -2,7 +2,6 @@ import React from 'react'
 import searchImg from '../../img/header/loopa.svg';
 
 function Search({ isSearchOpen, ...props }) {
-    console.log(props);
     return (
         <div className={isSearchOpen ? 'active header__search' : 'header__search'}>
             <input {...props} />
