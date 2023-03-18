@@ -17,7 +17,7 @@ const CategoryLeftBar = () => {
             <CategoryItem category_item_text='История' src={historyImg} active={false} />
             <CategoryItem category_item_text='Ваши видео' src={myVideoImg} active={false} />
             <CategoryItem category_item_text='Смотреть позже' src={viewNextImg} active={false} />
-            <CategoryItem category_item_text='Понравившиеся' src={likesImg} active={false} />
+            <CategoryItem category_item_text='Понравившиеся' src={likesImg} nameCategoryItem={"category-item__borger"} active={false} />
         </div>
     );
 }
